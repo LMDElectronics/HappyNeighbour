@@ -1,0 +1,3 @@
+1- Terminar de hacer repositorio
+2- Eliminar archivos auxiliares de recuperacion del proyecto
+3- Continuar con procesado para poder grabar samples
