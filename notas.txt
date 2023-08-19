@@ -1,3 +1,4 @@
-1- Terminar de hacer repositorio
-2- Eliminar archivos auxiliares de recuperacion del proyecto
-3- Continuar con procesado para poder grabar samples
+1- Terminar de hacer repositorio                              [DONE]
+2- Eliminar archivos auxiliares de recuperacion del proyecto  [TODO]
+3- Buscar como saber los dB de la muestra grabada             [TODO]
+4- Continuar con procesado para poder grabar samples          [TODO]
