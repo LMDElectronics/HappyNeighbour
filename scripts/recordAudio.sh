@@ -34,5 +34,18 @@ fi
 echo -e "${LIGHT_RED}Recording File: ${NC}${WHITE}${FILE_OUTPUT}${NC}"
 
 #record command
-#rec -c1 -r 48000 ${FILE_OUTPUT} silence 1 0.1 0.5% 1 1.0 0.5% > /dev/null 2>&1
-rec -c1 -r ${SAMPLING_TIME} ${FILE_OUTPUT} silence 1 0.1 1.5% 1 1.0 1.5% > /dev/null 2>&1
+
+#parameter explanation
+#
+# start recording:
+#  "silence 1"  will be trimmered until a sound is 
+#  "1.5%" of the sample value is heard for at least
+#  "0.1" seconds 
+#
+# stop recording:
+#  "1"  trim all silence after the sample value is 
+#  "1.5%" below the threshold after
+#  "1" seconds 
+
+#rec -c1 -r ${SAMPLING_TIME} ${FILE_OUTPUT} silence 1 0.1 1.5% 1 1.0 1.5% > /dev/null 2>&1
+rec -c1 -r ${SAMPLING_TIME} ${FILE_OUTPUT} silence 1 0.1 1.0% 1 1.0 1.0% > /dev/null 2>&1

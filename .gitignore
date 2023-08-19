@@ -1,4 +1,4 @@
 audio_samples/processed_data/
-audio_samples/recording.wav
+*.wav
 audio_samples/topAnnoying/
 pyaudio/

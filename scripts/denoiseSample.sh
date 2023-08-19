@@ -16,6 +16,8 @@ FILTERED_OUTPUT_FILENAME=filtered_sample.wav
 
 echo -e "${LIGHT_YELLOW}Denoising...${NC}"
 
+echo -e "${LIGHT_YELLOW}Noise profile file used: ${WHITE}${NOISE_PROFILE_FILE}${NC}"
+
 #clean noise from the audio
 sox "$FILE_TO_DENOISE" "$CLEAN_OUTPUT_FILENAME" noisered "$NOISE_PROFILE_FILE" "$SENSITIVITY" > /dev/null 2>&1
 

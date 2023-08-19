@@ -38,7 +38,7 @@ do
   # 3- check if noise filter must be applied
   if [ "$NOISE_PROCESSING" == "YES" ]
   then    
-    ./denoiseSample.sh "$OUTPUT" "$PROFILE_FILE" "$SENSITIVITY" "$LOWPASS_FILTER_LFREQ" "$LOWPASS_FILTER_HFREQ"
+    ./denoiseSample.sh "$OUTPUT" "$PROFILE_FILE_TO_USE" "$SENSITIVITY" "$LOWPASS_FILTER_LFREQ" "$LOWPASS_FILTER_HFREQ"
   fi
 
   # 4- check if synth tones should be added
